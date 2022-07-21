@@ -48,11 +48,13 @@ body {
     font-size: 1.6rem;
 }
 
-.menu a {
+.menu a,
+.logo a {
     text-decoration: none;
 }
 
-.menu a:visited {
+.menu a:visited,
+.logo a:visited {
     color: #9CC4B2;
 }
 
@@ -80,7 +82,7 @@ body {
 
 /* main info css */
 
-.info-container{
+.info-container {
     height: calc(100vh - 60px - 50px - 10px);
     font-family: 'Smooch', cursive;
     font-size: 8rem;
@@ -138,7 +140,7 @@ body {
         height: 18px;
     }
 
-    .info-container{
+    .info-container {
         font-size: 3.5rem;
     }
 }
