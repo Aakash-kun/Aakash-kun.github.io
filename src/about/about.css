@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Smooch&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #9CC4B2;
+    background-color: #2D2A32;
+    font-family: 'Bebas Neue', cursive;
+    overflow: auto;
+}
+
+/* Container, navbar, and footer css  */
+
+.container {
+    border: 5px solid #9CC4B2;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 70%;
+    max-width: 1524px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 1.6rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 5px;
+    font-size: 1.6rem;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu a:visited {
+    color: inherit;
+}
+
+.menu a.active {
+    color: #9b6dc2;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts {
+    width: 11rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts img {
+    height: 25px;
+}
+
+
+/* main info css */
+
+.info-container{
+    height: calc(100vh - 60px - 50px - 10px);
+    font-family: 'Smooch', cursive;
+    font-size: 8rem;
+    color: #9b6dc2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .navbar {
+        width: 80%;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        inset: 5px 5px 5px 30%;
+        /* inset means (top, right, bottom, left) */
+        padding: min(15vh, 10rem) min(20vw, 5rem);
+        background-color: #9a6dc229;
+        backdrop-filter: blur(1.8rem);
+        z-index: 1;
+        transform: translateX(100%);
+    }
+
+    .menu[show="true"] {
+        transform: translateX(0%);
+    }
+
+    .menu li {
+        margin: 15px 0px;
+    }
+
+    .nav-toggle {
+        display: block;
+        z-index: 10;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .nav-toggle img {
+        height: 1.55rem;
+        aspect-ratio: 1;
+    }
+
+    .contacts {
+        width: 6.5rem;
+    }
+
+    .contacts img {
+        height: 18px;
+    }
+
+    .info-container{
+        font-size: 3.5rem;
+    }
+}
