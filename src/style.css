@@ -44,6 +44,7 @@ body {
     display: inline;
     margin: 0 5px;
     font-size: 1.6rem;
+    color: #9CC4B2;
 }
 
 .menu a,
@@ -189,5 +190,6 @@ body {
 
     .about a {
         font-size: 0.8rem;
+        color: #9CC4B2;
     }
 }
